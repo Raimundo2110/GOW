@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <!--Link CSS-->
+    <link rel="stylesheet" href="./output.css">
+    <!--GoogleFonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!--RemixIcons Link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Lite Youtube-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
+</head>
+
+<body>
+    <!--Musica de fondo-->
+
+    <audio id="miAudio">
+        <source src="../assets/sounds/Melody of Pandora - God of War 3 Soundtrack.mp3" type="audio/mp3">
+    </audio>
+
+    <!--Header-->
+
+    <header class="bg-black/75 flex justify-between m-auto p-5">
+        <h1 id="logo" class="text-4xl text-center text-white">GOD OF WAR</h1>
+        <button class="audiobtn" onclick="toggleAudio()"><i class="ri-music-ai-line text-white text-4xl"></i></button>
+    </header>
+
+    <!--Main-->
+
+    <main class="h-dvh">
+
+        <!--Inicio-->
+
+        <article class="my-2 bg-black/20 gap-7 grid p-2">
+            <h2 class="text-white text-center text-3xl uppercase">¿Eres digno de empuñar la hoja del olimpo?</h2>
+            <p class="text-white text-center text-2xl">Conoce la historia de su creación y propósito como arma divina.
+            </p>
+            <img id="hoja_olimpo" class="w-[350px] m-auto" src="../assets/images/hoja-del-olimpo.png"
+                alt="espada_olimpo">
+            <p class="text-white text-center text-2xl">En el siguiente video sabrás por que Kratos obtuvo la hoja del
+                olimpo.</p>
+        </article>
+
+        <hr class="text-white mx-5 p-3">
+
+        <!--Video-->
+
+        <div class="p-5 m-auto sm:w-[800px]">
+            <lite-youtube videoid="UZffImOZSCc"></lite-youtube>
+            <span class="text-white">Propietario del video : <a class="border-b-1"
+                    href="https://www.youtube.com/@JugadorBuho">JugadorBuho</a></span>
+        </div>
+
+        <!--Lore-->
+
+        <section>
+            <h2 class="text-3xl text-white text-center font-extrabold uppercase py-5">Lore de la hoja del olimpo</h2>
+            <!--Preguntas-->
+            <div class="grid sm:grid-cols-3 bg-black/30">
+                <div class="text-white p-5 grid gap-2">
+                    <h2 class="text-2xl uppercase">¿Qué es esta espada?</h2>
+                    <p>La Espada del Olimpo es una gran espada de energía extremadamente poderosa que al llenarla de
+                        energía, desprende una luz azul brillante. Fue creada por Zeus, forjada de los Cielos y la
+                        Tierra durante la Gran Guerra para desterrar a los Titanes al Tártaro, y poner fin a la guerra
+                        de una vez por todas.</p>
+                </div>
+
+                <div class="text-white p-5 grid gap-2 text-right sm:text-center">
+                    <h2 class="text-2xl uppercase">¿Dónde aparece por primera vez?</h2>
+                    <p>Esta arma fue utilizada por Kratos por primera vez en Rodas, cuando Kratos estaba destruyendo
+                        dicha ciudad para dar la victoria a los espartanos pero Zeus, le arrebata parte de sus poderes y
+                        le da vida al Coloso de Rodas, engañandole le entrega la espada para destruir el Coloso de Rodas
+                        y Kratos drena todo su poder de dios en ella, supuestamente, dando a Kratos la "fuerza para
+                        destruir a todos".</p>
+                </div>
+
+                <div class="text-white p-5 grid gap-2 sm:text-right">
+                    <h2 class="text-2xl uppercase">Desenlace de la hoja</h2>
+                    <p>Después de un duro enfrentamiento Kratos finge rendirse, cuando Zeus va a decapitar a Kratos, se
+                        da la vuelta y clava las manos de Zeus en una piedra, asestándole varias puñaladas en el pecho,
+                        pero el Dios Olímpico se libera y cuando Kratos está a punto de asestarle el golpe final Atenea
+                        interfiere poniéndose entre la espada y Zeus, Kratos acaba matándola accidentalmente con la
+                        espada, en lugar de Zeus, mientras huye. Todo eso puso de manifiesto que la espada tiene la
+                        capacidad de dañar e incluso matar a los dioses.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer></footer>
+
+    <!--Script boton musica de fondo-->
+
+    <script>
+        function toggleAudio() {
+            var audio = document.getElementById("miAudio");
+            if (!audio.paused) {
+                audio.pause();
+                audio.currentTime = 0; // Reinicia el audio al inicio
+            } else {
+                audio.play();
+            }
+        }
+    </script>
+</body>
+
+</html>

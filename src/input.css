@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body{
+    background-image:url(../assets/images/gigantes-puertas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Quicksand";
+}
+
+#logo{
+    letter-spacing: 5px;
+    font-family: "Crimson Text";
+}
+
+#hoja_olimpo{
+    filter: drop-shadow(0 0 10px rgb(92, 192, 241));
+}
