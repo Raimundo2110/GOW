@@ -17,3 +17,25 @@ body{
 #hoja_olimpo{
     filter: drop-shadow(0 0 10px rgb(92, 192, 241));
 }
+
+#zeus{
+    filter: drop-shadow(0 0 10px rgb(241, 241, 92));
+}
+
+#hades{
+    filter: drop-shadow(0 0 10px rgb(75, 5, 82));
+}
+
+#hercules{
+    filter: drop-shadow(0 0 10px rgb(85, 88, 87));
+}
+
+#poseidon{
+    filter: drop-shadow(0 0 10px rgb(7, 110, 193));
+}
+
+.godName{
+    letter-spacing: 7px;
+    font-weight: 400;
+    font-family: "Crimson Text";
+}
